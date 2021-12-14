@@ -5,7 +5,7 @@ import join from '../../assets/icons/join.svg';
 
 const Filter = () => {
 	return (
-		<div className='my-3 filter-tab'>
+		<div className='my-3 filter-tab sticky-top'>
 			<Nav tabs>
 				<NavItem>
 					<NavLink active href='#'>

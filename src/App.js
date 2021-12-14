@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './Components/Navigation/Navigation';
 import Header from './Components/Header/Header';
 import Filter from './Components/Filter/Filter';
+import MainContent from './Components/MainContent/MainContent';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Header />
 			<div className='container'>
 				<Filter />
+				<MainContent />
 			</div>
 		</>
 	);
