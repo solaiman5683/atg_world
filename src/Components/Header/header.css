@@ -18,7 +18,7 @@
 	height: 440px;
 	display: flex;
 	flex-direction: column;
-	justify-content: end;
+	justify-content: flex-end;
 	padding: 60px 0;
 }
 .content h1 {
