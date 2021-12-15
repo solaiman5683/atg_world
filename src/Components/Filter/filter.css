@@ -12,3 +12,8 @@
 .filter-tab a:hover {
 	color: #444444;
 }
+.filter-tab {
+	position: sticky;
+	top: 60px;
+	z-index: 255;
+}

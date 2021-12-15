@@ -10,8 +10,8 @@ function App() {
 	return (
 		<>
 			<Navigation logo={logo} />
-			<Header />
-			<div className='container'>
+			<div className='mt-5'>
+				<Header />
 				<Filter />
 				<MainContent />
 			</div>

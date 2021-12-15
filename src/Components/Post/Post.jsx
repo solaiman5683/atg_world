@@ -1,7 +1,11 @@
 import React from 'react';
 import './post.css';
+import eye from '../../assets/icons/eye.svg';
+import share from '../../assets/icons/share.svg';
+
 const Post = ({ post }) => {
-	const { name, picture, catagory } = post;
+	const { name, picture, catagory, description, author_img, author, views } =
+		post;
 	console.log(post);
 	return (
 		<div className='col'>
@@ -21,12 +25,31 @@ const Post = ({ post }) => {
 							? '🗓️ Meetup'
 							: '💼️ Job'}
 					</p>
-					<h5 className='card-title'>{name}</h5>
+					<div className='row'>
+						<div className='col-10'>
+							<h5
+								className='card-title'
+								style={{ fontSize: '22px', fontWeight: '600' }}>
+								{name}
+							</h5>
+						</div>
+						<div className='col-2'></div>
+					</div>
 
-					<p className='card-text'>
-						This is a longer card with supporting text below as a natural
-						lead-in to additional content. This content is a little bit longer.
-					</p>
+					<p className='card-text'>{description}</p>
+					<div className='d-flex justify-content-between align-items-center'>
+						<div>
+							<img src={author_img} className='pe-3' alt='' />
+							<span className='author'>{author}</span>
+						</div>
+						<div>
+							<img src={eye} alt='' />
+							<span>{views} views</span>
+							<button className='btn btn-light ms-4'>
+								<img src={share} alt='' />
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

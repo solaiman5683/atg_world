@@ -1,9 +1,41 @@
 .card-image {
 	height: 220px;
-	width: 692px;
+	width: 100%;
 	background-position: center;
 	background-size: cover;
 }
 .card {
 	width: 692px;
+}
+.card-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 134.17%;
+	color: #495057;
+}
+.author {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 23px;
+}
+@media screen and (max-width: 768px) {
+	.col {
+		display: flex;
+		justify-content: center;
+	}
+	.card {
+		width: 560px;
+	}
+	.card-image {
+		height: 180px;
+	}
+}
+@media screen and (max-width: 580px) {
+	.card {
+		width: 360px;
+	}
+	.card-image {
+		height: 120px;
+	}
 }
